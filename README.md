@@ -1,2 +1,3 @@
-# ab2015-android-a
-Eskişehir Akademik Bilişim 2015'teki Android-A kursu boyunca işlenen konular burada yer alır.
+# Akademik Bilişim 2015 - Android-A Kursu
+Bu repository, Android-A kursu boyunca gerekli olan bütün bilgileri ve yazılan örnek kodları içerir.
+Kurs bilgilerini Wiki sayfasından inceleyebilirsiniz.
