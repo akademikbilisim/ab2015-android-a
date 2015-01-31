@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <!--aciklama satiri buraya gelecek-->
+
+    <TextView
+        android:text="@string/deger_gir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/yazi_alani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btn_goster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/goster"
+        android:textSize="28sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
