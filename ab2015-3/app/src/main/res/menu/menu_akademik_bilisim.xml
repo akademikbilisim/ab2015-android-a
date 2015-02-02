@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".AkademikBilisim">
+    <item
+        android:id="@+id/duyuru"
+        android:title="Duyuru"
+        app:showAsAction="always"/>
+</menu>

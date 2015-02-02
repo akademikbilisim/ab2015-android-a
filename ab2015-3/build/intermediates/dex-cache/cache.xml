@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/halil/Documents/Development/AB2015/AkademikBilisim/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/halil/Documents/Development/AB2015/AkademikBilisim/app/build/intermediates/pre-dexed/debug/classes-380147a11eb5e7642f1218230d466fbe172763b4.jar" />
+    </item>
+    <item
+        jar="/home/halil/Documents/Development/AB2015/AkademikBilisim/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/halil/Documents/Development/AB2015/AkademikBilisim/app/build/intermediates/pre-dexed/debug/classes-9162d073a96cc28b0b78b269201a3d0470aa370e.jar" />
+    </item>
+    <item
+        jar="/home/halil/Documents/adt-bundle-linux-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/halil/Documents/Development/AB2015/AkademikBilisim/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-395e2cf0c373bea0c3cf032e7c232a58145047c9.jar" />
+    </item>
+    <item
+        jar="/home/halil/Documents/Development/AB2015/AkademikBilisim/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/halil/Documents/Development/AB2015/AkademikBilisim/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-fd1ad5fd6a40f6ada0fbef35265defa54a421fc9.jar" />
+    </item>
+
+</items>

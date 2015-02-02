@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/girilen_deger"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#ff6356ff"/>
+
+    <Button
+        android:id="@+id/btn_kapat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kapat"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"/>
+
+</RelativeLayout>

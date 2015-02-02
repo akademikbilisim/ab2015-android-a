@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Akademik Bilisim</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ders_adi">AB-2015-Android-1</string>
+    <string name="deger_gir">Lütfen bir değer giriniz:</string>
+    <string name="goster">Göster</string>
+    <string name="title_activity_detay">Detay</string>
+    <string name="kapat">Kapat</string>
+    <string name="title_activity_duyurular">Duyurular</string>
+
+</resources>
