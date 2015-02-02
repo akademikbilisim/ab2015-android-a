@@ -1,0 +1,74 @@
+
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.params.ClientPNames;
+import org.apache.http.client.params.CookiePolicy;
+import org.apache.http.client.utils.URLEncodedUtils;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.protocol.BasicHttpContext;
+import org.apache.http.protocol.HttpContext;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+
+public class HTTPUtilities {
+
+    public static JSONObject getRequest(String getURL, List<NameValuePair> httpParams) {
+        JSONObject responseJSON = null;
+        HttpGet getRequest;
+
+        HttpContext localContext = new BasicHttpContext();
+        DefaultHttpClient httpClient = new DefaultHttpClient();
+        httpClient.getParams().setParameter(ClientPNames.COOKIE_POLICY,
+                CookiePolicy.RFC_2109);
+        if (httpParams != null) {
+            getRequest = new HttpGet(getURL + "?" + URLEncodedUtils
+                    .format(httpParams, "utf-8"));
+        } else {
+            getRequest = new HttpGet(getURL);
+        }
+        getRequest.setHeader("Accept", "application/json");
+        getRequest.setHeader("Content-type", "application/json");
+        try {
+            HttpResponse response = httpClient.execute(getRequest, localContext);
+            String responseString = EntityUtils.toString(response.getEntity());
+            responseJSON = new JSONObject(responseString);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+        return responseJSON;
+    }
+
+    public static JSONObject postRequest(String postURL, JSONObject postData) {
+        JSONObject responseJSON = null;
+
+        HttpContext localContext = new BasicHttpContext();
+        DefaultHttpClient httpClient = new DefaultHttpClient();
+        httpClient.getParams().setParameter(ClientPNames.COOKIE_POLICY,
+                CookiePolicy.RFC_2109);
+        HttpPost postRequest = new HttpPost(postURL);
+        try {
+            StringEntity stringEntity = new StringEntity(postData.toString(), "UTF-8");
+            postRequest.setEntity(stringEntity);
+            postRequest.setHeader("Accept", "application/json");
+            postRequest.setHeader("Content-type", "application/json");
+            try {
+                HttpResponse response = httpClient.execute(postRequest, localContext);
+                String responseString = EntityUtils.toString(response.getEntity());
+                responseJSON = new JSONObject(responseString);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return responseJSON;
+    }
+
+}
