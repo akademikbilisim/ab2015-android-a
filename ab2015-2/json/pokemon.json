@@ -1,0 +1,14 @@
+[
+	{
+		"name":"Pikachu",
+		"level":1
+	},
+	{
+		"name":"Raichu",
+		"level":2
+	},
+	{
+		"name":"Pichu",
+		"level":3
+	}
+]
